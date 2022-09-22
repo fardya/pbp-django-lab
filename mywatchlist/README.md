@@ -1,14 +1,11 @@
 Jelaskan perbedaan antara JSON, XML, dan HTML!
-- JSON
-JSON (JavaScript Object Notation) adalah turunan dari JavaScript yang digunakan dalam penyimpanan dan pengiriman data.
+- JSON (JavaScript Object Notation) adalah turunan dari JavaScript yang digunakan dalam penyimpanan dan pengiriman data.
 JSON didesain menjadi ***self-describing***, sehingga JSON sangat mudah untuk dimengerti.
 Format JSON berbentuk text, sehingga kode untuk membaca dan membuat JSON banyak terdapat di berbagai bahasa pemrograman.
-- XML
-XML (eXtensible Markup Language) adalah bahasa komputer untuk menyederhanakan proses pertukaran dan penyimpanan data.
+- XML (eXtensible Markup Language) adalah bahasa komputer untuk menyederhanakan proses pertukaran dan penyimpanan data.
 XML didesain menjadi ***self-descriptive***, sehingga dengan membaca XML tersebut, mudah mengerti informasi yang ingin disampaikan data yang tertulis.
 XML hanyalah informasi yang dibungkus di dalam tag, tidak perlu program untuk mengirim, menerima, menyimpan, atau menampilkan informasi tersebut.
-- HTML
-HTML (Hyper Text Markup Language) adalah bahasa markup standar untuk mendefinisikan struktur dari sebuah halaman web.
+- HTML (Hyper Text Markup Language) adalah bahasa markup standar untuk mendefinisikan struktur dari sebuah halaman web.
 HTML berisi macam-macam elemen yang akan menyampaikan informasi cara untuk menampilkan konten kepada browser.
 HTML umum digunakan untuk menyusun bagian paragraf, heading, maupun ***link*** pada halaman web.
 
@@ -34,5 +31,3 @@ Akses URL menggunakan Postman
 <img width="960" alt="2022-09-22 (6)" src="https://user-images.githubusercontent.com/112617861/191643071-b9eb2e0b-1599-45ec-b6b5-17fe1075c123.png">
 - HTML
 <img width="960" alt="2022-09-22 (1)" src="https://user-images.githubusercontent.com/112617861/191643409-3ed0f1ed-f0e0-4045-ab79-c44a2a9f15b8.png">
-
-
