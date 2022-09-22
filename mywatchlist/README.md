@@ -13,7 +13,7 @@ HTML berisi macam-macam elemen yang akan menyampaikan informasi cara untuk menam
 HTML umum digunakan untuk menyusun bagian paragraf, heading, maupun ***link*** pada halaman web.
 
 Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
-Data delivery penting dalam pengimplementasian sebuah platform karena perlu mengirimkan satu stack ke stack lainnya. Dalam beberapa kasus, data yang diterima atau dikirim berbeda-beda, sehingga perlu metode data delivery untuk menyesuaikannya.
+Data delivery penting dalam pengimplementasian sebuah platform karena data perlu dikirim satu ***stack*** ke ***stack*** lainnya. Dalam beberapa kasus, data yang diterima atau dikirim berbeda-beda, sehingga perlu metode data delivery untuk menyesuaikannya. Selain itu, bisa jadi ada berkas yang tidak disimpan di ***server***, tetapi dihasilkan oleh kode program.
 
 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 - Membuat folder baru bernama mywatchlist di dalam folder tugas2
