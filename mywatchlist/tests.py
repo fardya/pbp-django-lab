@@ -5,15 +5,15 @@ from django.urls import reverse
 class test(TestCase):
     def testHtml(self):
         client = Client()
-        response = client.get(reverse("mywatchlist:show_byhtml"))
+        response = client.get(reverse("mywatchlist:show_html"))
         self.assertEquals(response.status_code,200)
 
     def testJSON(self):
         client = Client()
-        response = client.get(reverse("mywatchlist:show_byjson"))
+        response = client.get(reverse("mywatchlist:show_json"))
         self.assertEquals(response.status_code,200)
 
     def testXML(self):
         client = Client()
-        response = client.get(reverse("mywatchlist:show_byxml"))
+        response = client.get(reverse("mywatchlist:show_xml"))
         self.assertEquals(response.status_code,200)
