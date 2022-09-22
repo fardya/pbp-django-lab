@@ -16,13 +16,15 @@ Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah p
 Data delivery penting dalam pengimplementasian sebuah platform karena perlu mengirimkan satu stack ke stack lainnya. Dalam beberapa kasus, data yang diterima atau dikirim berbeda-beda, sehingga perlu metode data delivery untuk menyesuaikannya.
 
 Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
-Membuat folder baru bernama mywatchlist di dalam folder tugas2
-Mengimplementasikan models,py, views.py, dan urls.py pada folder mywatchlist
-Menambahkan path mywatchlist
-Membuat file initial_mywatchlist_data.json dan memasukkan 10 data
-Membuat folder templates dan file .html di dalamnya
-Melakukan makemigrations dan migrate
-Melakukan runserver
-Melakukan push ke akun GitHub
-Mengecek deployment terhadap aplikasi mywatchlist di Heroku 
-Mengisi file tests.py kemudian test tiga URL untuk memastikan dapat URL mengembalikan respon HTTP 200 OK
+- Membuat folder baru bernama mywatchlist di dalam folder tugas2
+- Mengimplementasikan models,py, views.py, dan urls.py pada folder mywatchlist
+- Menambahkan path mywatchlist
+- Membuat file initial_mywatchlist_data.json dan memasukkan 10 data
+- Membuat folder templates dan file .html di dalamnya
+- Melakukan makemigrations dan migrate
+- Melakukan runserver
+- Melakukan push ke akun GitHub
+- Mengecek deployment terhadap aplikasi mywatchlist di Heroku 
+- Mengisi file tests.py kemudian test tiga URL untuk memastikan dapat URL mengembalikan respon HTTP 200 OK
+
+<img width="960" alt="2022-09-22 (6)" src="https://user-images.githubusercontent.com/112617861/191643071-b9eb2e0b-1599-45ec-b6b5-17fe1075c123.png">
