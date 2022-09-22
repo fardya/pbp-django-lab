@@ -27,4 +27,12 @@ Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 - Mengecek deployment terhadap aplikasi mywatchlist di Heroku 
 - Mengisi file tests.py kemudian test tiga URL untuk memastikan dapat URL mengembalikan respon HTTP 200 OK
 
+Akses URL menggunakan Postman
+- JSON
+<img width="960" alt="2022-09-22 (5)" src="https://user-images.githubusercontent.com/112617861/191643334-e56ecb33-ea69-4f3a-ab5e-35ae62d8039a.png">
+- XML
 <img width="960" alt="2022-09-22 (6)" src="https://user-images.githubusercontent.com/112617861/191643071-b9eb2e0b-1599-45ec-b6b5-17fe1075c123.png">
+- HTML
+<img width="960" alt="2022-09-22 (1)" src="https://user-images.githubusercontent.com/112617861/191643409-3ed0f1ed-f0e0-4045-ab79-c44a2a9f15b8.png">
+
+
