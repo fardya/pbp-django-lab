@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+ {% block content %}
+
+  <h3 style="text-align:center;color:gray">Task 4 Assignment PBP/PBD</h3>
+  <br>
+
+  {% if user.is_authenticated %}
+    <h1 style="font-size:2vw;color:palevioletred;text-align:center"> Welcome, {{ user.get_username }}! </h1>
+
+    <table border = "1" width = 413 style="background-color:lavenderblush;margin-left:auto;margin-right:auto">
+        <tr>
+        <th>Date</th>
+        <th>Title</th>
+        <th>Description</th>
+        </tr>
+        {% comment %} Add the data below this line {% endcomment %}
+        {% for todo in list_todo %}
+            <tr>
+                <th>{{todo.date}}</th>
+                <th>{{todo.title}}</th>
+                <th>{{todo.description}}</th>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+    <br>
+    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:create-task' %}">Add New Task</a></button>
+    <br>
+    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+  {% endif %}
+
+ {% endblock content %}
