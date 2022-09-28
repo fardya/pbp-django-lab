@@ -8,15 +8,15 @@
 
 <div class = "login">
     
-    <h1>Formulir Registrasi</h1>  
+    <h1 style="font-size:2vw;color:palevioletred;text-align:center">Registration Form</h1> 
 
         <form method="POST" >  
             {% csrf_token %}  
-            <table>  
+            <table style="background-color:lavenderblush;margin-left:auto;margin-right:auto">
                 {{ form.as_table }}  
                 <tr>  
                     <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
+                    <td><input type="submit" name="submit" value="Regist"/></td>  
                 </tr>  
             </table>  
         </form>

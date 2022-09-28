@@ -2,24 +2,36 @@
 
  {% block content %}
 
-  <h3 style="text-align:center;color:gray">Task 4 Assignment PBP/PBD</h3>
-  <br>
-
   {% if user.is_authenticated %}
+    <br>
     <h1 style="font-size:2vw;color:palevioletred;text-align:center"> Welcome, {{ user.get_username }}! </h1>
+    <p style="font-style: italic;text-align:center"> here's your to do list: </p>
 
-    <table border = "1" width = 413 style="background-color:lavenderblush;margin-left:auto;margin-right:auto">
+    <table border = "1" width = 413 style="margin-left:auto;margin-right:auto">
         <tr>
-        <th>Date</th>
+        <th>Date Added</th>
         <th>Title</th>
         <th>Description</th>
+        <th>Status</th>
+        <th>Options</th>
         </tr>
         {% comment %} Add the data below this line {% endcomment %}
         {% for todo in list_todo %}
             <tr>
-                <th>{{todo.date}}</th>
-                <th>{{todo.title}}</th>
-                <th>{{todo.description}}</th>
+                <td>{{todo.date}}</td>
+                <td>{{todo.title}}</td>
+                <td>{{todo.description}}</td>
+
+                {% if todo.is_finished %}
+                    <td>Selesai</td>
+                {% else %}
+                    <td>Belum selesai</td>
+                {% endif %}
+
+                <td>
+                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:status' todo.id %}">Status</a></button>
+                    <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:delete' todo.id %}">Delete</a></button>
+                </td>
             </tr>
         {% endfor %}
     </table>
@@ -31,5 +43,11 @@
     <button style="margin-left:auto;margin-right:auto;display:block;margin-top:0%;margin-bottom:0%"><a href="{% url 'todolist:logout' %}">Logout</a></button>
 
   {% endif %}
+
+<style>
+    body {
+        background-color:lavenderblush;
+    }
+</style>
 
  {% endblock content %}

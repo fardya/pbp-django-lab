@@ -9,17 +9,17 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.db import models
 from django import forms
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
+    data_todolist = Task.objects.filter(user= request.user)
+    context = {
+        'list_todo': data_todolist
+    }
     return render(request, "todolist.html", context)
 
-data_todolist = Task.objects.all()
-context = {
-    'list_todo': data_todolist,
-    'nama': 'Davina',
-    'student ID': '2106702005'
-}
 
 def register(request):
     form = UserCreationForm()
@@ -43,13 +43,15 @@ def login_user(request):
             login(request, user)
             return redirect('todolist:show_todolist')
         else:
-            messages.info(request, 'Username atau Password salah!')
+            messages.info(request, 'Wrong username or password')
     context = {}
     return render(request, 'login.html', context)
 
 def logout_user(request):
     logout(request)
-    return redirect('todolist:login')
+    response = HttpResponseRedirect(reverse('todolist:login'))
+    response.delete_cookie('last_login')
+    return response
 
 class TaskForm(forms.Form):
     title = forms.CharField(max_length=255)
@@ -61,9 +63,22 @@ def create_task(request):
         form = TaskForm(request.POST)
         if form.is_valid():
             Task.objects.create(title=form.cleaned_data["title"], description=form.cleaned_data["description"], date=datetime.datetime.now(), user=request.user)
-            return redirect('todolist:show_todolist')
+            return HttpResponseRedirect(reverse('todolist:show_todolist'))
     else:
         form = TaskForm()
     
     context = {'form':form}
     return render(request, 'create-task.html', context)
+
+@login_required(login_url='/todolist/login/')
+def status(request, id):
+    todo = Task.objects.get(id=id, user=request.user)
+    todo.is_finished = not todo.is_finished
+    todo.save(update_fields=['is_finished'])
+    return HttpResponseRedirect(reverse('todolist:show_todolist'))
+    # return redirect('todolist:show_todolist')
+
+@login_required(login_url='/todolist/login/')
+def delete(request, id):
+    Task.objects.get(id=id).delete()
+    return redirect('todolist:show_todolist')
