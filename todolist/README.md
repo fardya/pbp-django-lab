@@ -12,18 +12,15 @@ Bisa. Caranya adalah dengan menginisiasi pembuatan tabel pada template dengan ta
 <br/>
 <br/>
 **Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.**<br/>
-- Data yang di-input user akan diterima dengan tag input
-- Klien mengirim request POST ke server
-- Request yang diterima server diproses sesuai fungsi pada views.py
-- Data tersebut akan dimasukkan ke dalam Form berdasarkan model yang ada serta disimpan ke database
+Data yang di-input user akan diterima dengan tag input. Kemudian, klien mengirim request POST ke server. Request yang diterima server akan diproses sesuai fungsi pada views.py. Data tersebut akan dimasukkan ke dalam form berdasarkan model yang ada serta disimpan ke database.
 <br/>
 <br/>
 <b>Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.</b><br/>
-1. Membuat dan mendaftarkan aplikasi todolist pada proyek yang sudah dibuat
-2. Membuat class Task pada models.py todolist dengan atribut user, date, title, dan description
-3. Membuat fungsi yang bersesuai dengan atribut pada views.py todolist sekaligus menambahkan kode untuk restriksi akses agar isi todolist/cretae-task hanya dapat diakses oleh user yang login
-4. Menambahkan routing pada urls.py todolist
-5. Membuat template untuk halaman situs yaitu todolist, login, register, dan create-task
-6. Memasukkan kode ke github
-7. Melakukan deployment ke Heroku
-8. Membuat dua akun pengguna dan tiga dummy data
+- Membuat dan mendaftarkan aplikasi todolist pada proyek yang sudah dibuat
+- Membuat class Task pada models.py todolist dengan atribut user, date, title, dan description
+- Membuat fungsi yang bersesuai dengan atribut pada views.py todolist sekaligus menambahkan kode untuk restriksi akses agar isi todolist/cretae-task hanya dapat diakses oleh user yang login
+- Menambahkan routing pada urls.py todolist
+- Membuat template untuk halaman situs yaitu todolist, login, register, dan create-task
+- Memasukkan kode ke github
+- Melakukan deployment ke Heroku
+- Membuat dua akun pengguna dan tiga dummy data
