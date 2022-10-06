@@ -1,13 +1,13 @@
 Davina Fardya Zulfa Izzati - 2106702005 - A<br/><br/>
 
 **Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?**<br/>
-**Inline CSS** hanya menata elemen HTML tertentu, caranya dengan menambahkan atribut style ke setiap tag HTML yang diinginkan tanpa menggunakan selector.<br/>
+* Inline CSS hanya menata elemen HTML tertentu, caranya dengan menambahkan atribut style ke setiap tag HTML yang diinginkan tanpa menggunakan selector.<br/>
 Kelebihan: lebih mudah jika ingin menata satu halaman saja, prioritasnya paling tinggi sehingga dapat digunakan untuk langsung mengubah sesuatu.<br/>
 Kekurangan: menggunakan style akan memakan waktu karena setiap style ditulis untuk satu tag saja dan lebih sulit dibaca karena panjang.<br/>
-**Internal CSS** merupakan style yang digunakan dengan mendefinisikan kode CSS dalam tag <style> di bagian `<head>` dokumen HTML.<br/>
+* Internal CSS merupakan style yang digunakan dengan mendefinisikan kode CSS dalam tag <style> di bagian `<head>` dokumen HTML.<br/>
 Kelebihan: lebih cepat dan efektif untuk menata satu halaman, tidak memerlukan dokumen CSS yang berbeda.<br/>
 Kekurangan: kurang efektif untuk menata banyak halaman, meningkatkan waktu memuat halaman tersebut.<br/>
-**External CSS** memuat kode CSS untuk menata berkas-dokumen HTML secara terpisah dengan format dokumen .css.<br/>
+* External CSS memuat kode CSS untuk menata berkas-dokumen HTML secara terpisah dengan format dokumen .css.<br/>
 Kelebihan: efektif untuk menata situs yang besar, bisa digunakan ke banyak dokumen HTML, struktur pada dokumen HTML lebih rapi karena hanya perlu import style-nya.<br/>
 Kekurangan: membutuhkan waktu akses styling dari dokumen .css, tidak efektif jika situs hanya memiliki satu halaman saja.<br/>
 
