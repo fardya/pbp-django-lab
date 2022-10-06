@@ -10,6 +10,7 @@ Kekurangan: kurang efektif untuk menata banyak halaman, meningkatkan waktu memua
 **External CSS** memuat kode CSS untuk menata berkas-dokumen HTML secara terpisah dengan format dokumen .css.<br/>
 Kelebihan: efektif untuk menata situs yang besar, bisa digunakan ke banyak dokumen HTML, struktur pada dokumen HTML lebih rapi karena hanya perlu import style-nya.<br/>
 Kekurangan: membutuhkan waktu akses styling dari dokumen .css, tidak efektif jika situs hanya memiliki satu halaman saja.<br/>
+
 **Jelaskan tag HTML5 yang kamu ketahui.**<br/>
 - `<button>` membuat tombol yang dapat diklik
 - `<div>` menentukan bagian styling dalam dokumen
@@ -19,11 +20,13 @@ Kekurangan: membutuhkan waktu akses styling dari dokumen .css, tidak efektif jik
 - `<table>` mendefinisikan tabel
 - `<title>` mendefinisikan judul dokumen
 <br/>
+
 **Jelaskan tipe-tipe CSS selector yang kamu ketahui**<br/>
 * ID Selectors menggunakan ID sebagai selector pada tag, diawali dengan #
 * Classes selectors menggunakan class sebagai selector, selector diawali dengan .
 * Element selectors menggunakan tag HTML sebagai selector untuk mengubah properti dalam tag tersebut<br/>
 Prioritas selector tertinggi dimulai dari yang paling atas.<br/>
+
 **Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.**<br/>
 * Menambahkan kode untuk menggunakan Bootstrap ke base.html
 * Mendefinisikan class yang ingin dipakai untuk styling
