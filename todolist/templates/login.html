@@ -8,7 +8,9 @@
 
 <div class = "login">
 
+    <br>
     <h1 style="font-size:2vw;color:palevioletred;text-align:center">Login</h1>
+    <br>
 
     <form method="POST" action="">
         {% csrf_token %}
@@ -27,17 +29,19 @@
                 <td></td>
                 <td><input class="btn login_btn" type="submit" value="Login"></td>
             </tr>
+            
         </table>
     </form>
 
+    <br>
     {% if messages %}
         <ul>
             {% for message in messages %}
-                <li>{{ message }}</li>
+                <li style="text-align:center;">{{ message }}</li>
             {% endfor %}
         </ul>
     {% endif %}     
-        
+    
     <p style="text-align:center">Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
 
 </div>
