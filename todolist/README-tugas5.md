@@ -19,7 +19,6 @@ Kekurangan: membutuhkan waktu akses styling dari dokumen .css, tidak efektif jik
 - `<html>` mendefinisikan root dokumen HTML
 - `<table>` mendefinisikan tabel
 - `<title>` mendefinisikan judul dokumen
-<br/>
 
 **Jelaskan tipe-tipe CSS selector yang kamu ketahui**<br/>
 * ID Selectors menggunakan ID sebagai selector pada tag, diawali dengan #
